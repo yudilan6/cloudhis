@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="common.cache" />
+        <module name="message.api" />
+        <module name="eureka.server" />
+        <module name="zuul.service" />
+        <module name="common.web" />
+        <module name="message.service" />
+        <module name="client.api" />
+        <module name="common.utils" />
+        <module name="message.repository" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="api" target="1.8" />
+      <module name="bigdata.center" target="1.8" />
+      <module name="client.api" target="1.8" />
+      <module name="cloudhis" target="1.8" />
+      <module name="common" target="1.8" />
+      <module name="common.api" target="1.8" />
+      <module name="common.business" target="1.8" />
+      <module name="common.cache" target="1.8" />
+      <module name="common.utils" target="1.8" />
+      <module name="common.web" target="1.8" />
+      <module name="common.xmsapi" target="1.8" />
+      <module name="cpms.api" target="1.8" />
+      <module name="eureka.server" target="1.8" />
+      <module name="mall.api" target="1.8" />
+      <module name="marketing.api" target="1.8" />
+      <module name="marketing.center" target="1.8" />
+      <module name="marketing.repository" target="1.8" />
+      <module name="marketing.service" target="1.8" />
+      <module name="message.api" target="1.8" />
+      <module name="message.center" target="1.8" />
+      <module name="message.repository" target="1.8" />
+      <module name="message.service" target="1.8" />
+      <module name="microservice" target="1.8" />
+      <module name="oms.api" target="1.8" />
+      <module name="open.api" target="1.8" />
+      <module name="operation.api" target="1.8" />
+      <module name="operation.center" target="1.8" />
+      <module name="operation.repository" target="1.8" />
+      <module name="operation.service" target="1.8" />
+      <module name="order.api" target="1.8" />
+      <module name="order.center" target="1.8" />
+      <module name="order.repository" target="1.8" />
+      <module name="order.service" target="1.8" />
+      <module name="organization.api" target="1.8" />
+      <module name="organization.center" target="1.8" />
+      <module name="organization.repository" target="1.8" />
+      <module name="organization.service" target="1.8" />
+      <module name="pay.api" target="1.8" />
+      <module name="pay.center" target="1.8" />
+      <module name="pay.repository" target="1.8" />
+      <module name="pay.service" target="1.8" />
+      <module name="product.api" target="1.8" />
+      <module name="product.center" target="1.8" />
+      <module name="product.repository" target="1.8" />
+      <module name="product.service" target="1.8" />
+      <module name="public.api" target="1.8" />
+      <module name="public.center" target="1.8" />
+      <module name="public.repository" target="1.8" />
+      <module name="public.service" target="1.8" />
+      <module name="search.api" target="1.8" />
+      <module name="search.repository" target="1.8" />
+      <module name="search.service" target="1.8" />
+      <module name="support" target="1.8" />
+      <module name="user.api" target="1.8" />
+      <module name="user.center" target="1.8" />
+      <module name="user.repository" target="1.8" />
+      <module name="user.service" target="1.8" />
+      <module name="wechat.api" target="1.8" />
+      <module name="zuul.service" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="client.api" options="-parameters" />
+      <module name="common.api" options="-parameters" />
+      <module name="common.cache" options="-parameters" />
+      <module name="common.utils" options="-parameters" />
+      <module name="common.web" options="-parameters" />
+      <module name="common.xmsapi" options="-parameters" />
+      <module name="cpms.api" options="-parameters" />
+      <module name="eureka.server" options="-parameters" />
+      <module name="mall.api" options="-parameters" />
+      <module name="marketing.api" options="-parameters" />
+      <module name="marketing.repository" options="-parameters" />
+      <module name="marketing.service" options="-parameters" />
+      <module name="message.api" options="-parameters" />
+      <module name="message.repository" options="-parameters" />
+      <module name="message.service" options="-parameters" />
+      <module name="oms.api" options="-parameters" />
+      <module name="open.api" options="-parameters" />
+      <module name="operation.api" options="-parameters" />
+      <module name="operation.repository" options="-parameters" />
+      <module name="operation.service" options="-parameters" />
+      <module name="order.api" options="-parameters" />
+      <module name="order.repository" options="-parameters" />
+      <module name="order.service" options="-parameters" />
+      <module name="organization.api" options="-parameters" />
+      <module name="organization.repository" options="-parameters" />
+      <module name="organization.service" options="-parameters" />
+      <module name="pay.api" options="-parameters" />
+      <module name="pay.repository" options="-parameters" />
+      <module name="pay.service" options="-parameters" />
+      <module name="product.api" options="-parameters" />
+      <module name="product.repository" options="-parameters" />
+      <module name="product.service" options="-parameters" />
+      <module name="public.api" options="-parameters" />
+      <module name="public.repository" options="-parameters" />
+      <module name="public.service" options="-parameters" />
+      <module name="search.api" options="-parameters" />
+      <module name="search.repository" options="-parameters" />
+      <module name="search.service" options="-parameters" />
+      <module name="user.api" options="-parameters" />
+      <module name="user.repository" options="-parameters" />
+      <module name="user.service" options="-parameters" />
+      <module name="wechat.api" options="-parameters" />
+      <module name="zuul.service" options="-parameters" />
+    </option>
+  </component>
+</project>

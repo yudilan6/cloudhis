@@ -1,0 +1,45 @@
+eureka:
+  client:
+    serviceUrl:
+#      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@localhost:17001/eureka-server/eureka/
+#      defaultZone: ${EUREKA_SERVICE_URL}
+      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@192.168.1.50:17001/eureka-server/eureka/
+# zipkin kafka
+spring:
+  kafka:
+    bootstrap-servers: 192.168.1.50:9092
+
+    #    bootstrap-servers: 192.168.88.188:9092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      # 只需要 leader 许可
+      acks: 1
+      #重试次数.
+      retries: 10
+
+    consumer:
+      group-id: message
+      auto-offset-reset: latest
+      enable-auto-commit: true
+      #      auto-commit-interval: 10
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+  zipkin:
+    kafka:
+      topic: zipkin
+    sender:
+      type: kafka
+    service:
+      name: ${spring.application.name}
+  sleuth:
+    sampler:
+      percentage: 1.0
+    enabled: true
+    messaging:
+      enabled: true
+
+message:
+  url: http://20.21.1.202:9080/OpenMasService?wsdl
+  applicationID: test
+  password : 123459

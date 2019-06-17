@@ -1,0 +1,42 @@
+eureka:
+  instance:
+    #从系统环境变量总读取host
+    hostname: ${HOST}
+  client:
+    serviceUrl:
+        defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@10.76.137.66:17001/eureka-server/eureka/,http://${spring.security.user.name}:${spring.security.user.password}@10.76.137.67:17001/eureka-server/eureka/
+
+#Zipkin服务器地址
+spring:
+#  kafka:
+#    bootstrap-servers: 10.76.137.82:9092
+#  zipkin:
+#    kafka:
+#      topic: zipkin
+#    sender:
+#      type: kafka
+#    service:
+#      name: ${spring.application.name}
+#  sleuth:
+#    sampler:
+#      percentage: 1.0
+#    enabled: true
+#    messaging:
+#      enabled: true
+  kafka:
+    bootstrap-servers: 10.76.137.82:9092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+
+    consumer:
+      group-id: message
+      enable-auto-commit: true
+      auto-commit-interval: 10
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+
+message:
+  url: http://10.76.134.179:9080/OpenMasService?wsdl
+  applicationID: YYGH
+  password : OUFtr2P7pMHu

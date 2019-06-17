@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/api/api.iml" filepath="$PROJECT_DIR$/api/api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api/client.api/client.api.iml" filepath="$PROJECT_DIR$/api/client.api/client.api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloudhis.iml" filepath="$PROJECT_DIR$/cloudhis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/common.cache/common.cache.iml" filepath="$PROJECT_DIR$/common/common.cache/common.cache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/common.utils/common.utils.iml" filepath="$PROJECT_DIR$/common/common.utils/common.utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/common.web/common.web.iml" filepath="$PROJECT_DIR$/common/common.web/common.web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/support/eureka.server/eureka.server.iml" filepath="$PROJECT_DIR$/support/eureka.server/eureka.server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice/message.center/message.api/message.api.iml" filepath="$PROJECT_DIR$/microservice/message.center/message.api/message.api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice/message.center/message.center.iml" filepath="$PROJECT_DIR$/microservice/message.center/message.center.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice/message.center/message.repository/message.repository.iml" filepath="$PROJECT_DIR$/microservice/message.center/message.repository/message.repository.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice/message.center/message.service/message.service.iml" filepath="$PROJECT_DIR$/microservice/message.center/message.service/message.service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice/microservice.iml" filepath="$PROJECT_DIR$/microservice/microservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/support/support.iml" filepath="$PROJECT_DIR$/support/support.iml" />
+      <module fileurl="file://$PROJECT_DIR$/support/zuul.service/zuul.service.iml" filepath="$PROJECT_DIR$/support/zuul.service/zuul.service.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,25 @@
+eureka:
+  client:
+    serviceUrl:
+#      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@localhost:17001/eureka-server/eureka/
+#      defaultZone: ${EUREKA_SERVICE_URL}
+      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@192.168.1.50:17001/eureka-server/eureka/
+# zipkin kafka
+spring:
+  kafka:
+    bootstrap-servers: 192.168.1.50:9092
+  zipkin:
+    kafka:
+      topic: zipkin
+    sender:
+      type: kafka
+    service:
+      name: ${spring.application.name}
+  sleuth:
+    sampler:
+      percentage: 1.0
+    enabled: true
+    messaging:
+      enabled: true
+
+access_center_yuantu_url: https://192.168.85.17:8243

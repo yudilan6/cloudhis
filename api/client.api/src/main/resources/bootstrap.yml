@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: client-api
+
+#logback中配置的日志路径
+logback:
+  logfile:
+      path: /data/logs/${spring.application.name}
