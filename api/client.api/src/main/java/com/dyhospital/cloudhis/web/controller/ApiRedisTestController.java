@@ -39,7 +39,7 @@ public class ApiRedisTestController {
     @ApiOperation("缓存查询")
     @RequestMapping(value = MessageApi.REDIS_GET_STR, method = RequestMethod.GET)
     public String getStrValue(String key) {
-        xxxx = xxx;
+        int i = 0;
         return customerMessageService.getStrValue(key);
     }
 
