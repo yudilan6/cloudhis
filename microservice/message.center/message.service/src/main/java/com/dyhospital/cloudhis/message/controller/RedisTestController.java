@@ -23,7 +23,7 @@ import java.util.Random;
  * Time: 17:47
  */
 @RestController
-@Api("缓存测试")
+@Api("缓存测试3333")
 public class RedisTestController {
 
     private Logger logger = LoggerFactory.getLogger(RedisTestController.class);
