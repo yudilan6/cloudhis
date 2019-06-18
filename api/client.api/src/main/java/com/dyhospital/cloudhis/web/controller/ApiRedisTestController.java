@@ -24,7 +24,7 @@ import java.util.Random;
  * Time: 17:47
  */
 @RestController
-@Api("缓存测试1211551")
+@Api("缓存测试")
 @RequestMapping("/test")
 public class ApiRedisTestController {
 
