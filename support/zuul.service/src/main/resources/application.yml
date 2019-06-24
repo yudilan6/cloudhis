@@ -35,26 +35,7 @@ zuul:
       path: /client-api/**
       serviceId: client-api
       retryable: true
-    oms-api:
-      path: /oms-api/**
-      serviceId: oms-api
-      retryable: true
-    cpms-api:
-      path: /cpms-api/**
-      serviceId: cpms-api
-      retryable: true
-    open-api:
-      path: /open-api/**
-      serviceId: open-api
-      retryable: true
-    mall-api:
-      path: /mall-api/**
-      serviceId: mall-api
-      retryable: true
-    wechat-api:
-      path: /wechat-api/**
-      serviceId: wechat-api
-      retryable: true
+
 
   sensitive-headers:
   add-host-header: true
@@ -65,7 +46,6 @@ zuul:
   ErrorFilter:
     post:
       disable: true
-
 
 server:
   port: 17005
@@ -163,6 +143,7 @@ hystrix:
         timeInMilliseconds: #计算百分比的窗口时间 默认60000
       healthSnapshot:
         intervalInMilliseconds: 800 #记录health 快照（用来统计成功和错误绿）的间隔 默认500
+
 #哪些请求加入swagger api 都不想加入，设置一个不存在的路径。
 swagger:
   paths: /user/.*

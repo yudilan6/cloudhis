@@ -78,7 +78,7 @@ public class RedisLockClient {
      * @param expx
      * @param time
      * @Description: redis setNx  key不存在才能set成功，若key存在则返回null
-     * @return: com.zjrcinfo.zjguahao.common.redis.lock.RedisLock
+     * @return: com.dyhospital.zjguahao.common.redis.lock.RedisLock
      * @Author: linhao
      * @Date: 2018/12/29
      */

@@ -1,4 +1,4 @@
-package com.zjrcinfo.zjguahao.common.web.template;
+package com.dyhospital.cloudhis.common.web.template;
 
 /**
  * Description: 通用回调类

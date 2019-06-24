@@ -21,14 +21,6 @@ spring:
       maxFileSize: 20MB #设置文件大小 20MB 不限制设置-1
       maxRequestSize: 20MB #设置请求大小 20MB 不限制设置-1
 
-#  boot:
-#    admin:
-#      url: @monitor.url@
-#      routes:
-#        endpoints: env,metrics,dump,hystrix.stream,turbine.stream,info,configprops,trace,logfile,refresh,heapdump,loggers,auditevents
-#      client:
-#        username: @monitor.user@
-#        password: @monitor.pwd@
 
 management:
   endpoints:

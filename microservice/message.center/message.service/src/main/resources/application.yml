@@ -17,20 +17,7 @@ spring:
       name: @monitor.user@
       password: @monitor.pwd@
 
-#  boot:
-#    admin:
-#      url: @monitor.url@
-#      routes:
-#        endpoints: env,metrics,dump,hystrix.stream,turbine.stream,info,configprops,trace,logfile,refresh,heapdump,loggers,auditevents
-#      client:
-#        username: @monitor.user@
-#        password: @monitor.pwd@
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
 
 server:
   port: 16009
@@ -129,12 +116,5 @@ hystrix:
         timeInMilliseconds: #计算百分比的窗口时间 默认60000
       healthSnapshot:
         intervalInMilliseconds: 800 #记录health 快照（用来统计成功和错误绿）的间隔 默认500
-
-
-
-
-#哪些请求加入swagger api 都不想加入，设置一个不存在的路径。
-swagger:
-  paths: /demo/.*,/msg/.*,/kafka/.*
 
 

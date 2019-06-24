@@ -1,4 +1,4 @@
-package com.zjrcinfo.zjguahao.common.web.log;
+package com.dyhospital.cloudhis.common.web.log;
 
 /**
  * Description: 日志记录器的名称

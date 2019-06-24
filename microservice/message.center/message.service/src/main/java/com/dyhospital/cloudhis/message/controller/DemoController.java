@@ -21,6 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DemoController {
 
+
     @Autowired
     private IKafkaPublish kafkaPublish;
 

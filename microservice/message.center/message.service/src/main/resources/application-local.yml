@@ -1,16 +1,5 @@
-#Zipkin服务器地址 #默认http通信的配置方式
-#spring:
-#  zipkin:
-#    connectTimeout: 10
-#    readTimeout: 10
-#    flushInterval: 2
-#    baseUrl:  http://localhost:17003/
-#    service:
-#      name:  ${spring.application.name}
-#    compression:
-#      enabled: false
 
-# zipkin kafka
+# kafka
 spring:
   kafka:
     bootstrap-servers: 192.168.1.49:9092

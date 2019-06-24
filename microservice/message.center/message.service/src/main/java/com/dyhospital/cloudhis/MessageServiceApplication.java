@@ -20,7 +20,7 @@ import org.springframework.web.client.RestTemplate;
  */
 @SpringBootApplication
 @EnableDiscoveryClient
-@ServletComponentScan(basePackages = { "com.zjrcinfo.zjguahao"})
+@ServletComponentScan(basePackages = { "com.dyhospital.zjguahao"})
 @EnableAsync
 @EnableFeignClients
 @EnableHystrix
